@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 
 // Use Express to publish static HTML, CSS, and JavaScript files that run in the browser. 
 app.use(express.static(__dirname + '/static'))
-app.use("/api", cors({ origin: 'https://victorious-ground-0cabb0910.1.azurestaticapps.net/' }))
+app.use("/api", cors({ origin: 'https://victorious-ground-0cabb0910.1.azurestaticapps.net' }))
 
 // The app.get functions below are being processed in Node.js running on the server.
 // Implement a custom About page.
